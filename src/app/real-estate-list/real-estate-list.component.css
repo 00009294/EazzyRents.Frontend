@@ -1,0 +1,29 @@
+/* Add your custom styles here */
+
+h2 {
+color: #333;
+}
+
+ul {
+list-style-type: none;
+padding: 0;
+}
+
+li {
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 10px;
+}
+
+strong {
+color: #555;
+}
+
+img {
+max-width: 100%;
+height: auto;
+margin-top: 5px;
+border: 1px solid #ddd;
+border-radius: 5px;
+}

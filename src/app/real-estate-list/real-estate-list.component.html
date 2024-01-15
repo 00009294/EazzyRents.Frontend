@@ -1,0 +1,33 @@
+<div>
+    <h2>Real Estate List</h2>
+
+<ul>
+    <li *ngFor="let realEstate of realEstates">
+    <div>
+        <strong>Description:</strong> {{ realEstate.description }}
+    </div>
+    <div>
+        <strong>Address:</strong> {{ realEstate.address }}
+    </div>
+    <div>
+        <strong>Price:</strong> ${{ realEstate.price }}
+    </div>
+    <div>
+        <strong>Phone Number:</strong> {{ realEstate.phoneNumber }}
+    </div>
+    <div>
+        <strong>Status:</strong> {{ realEstate.realEstateStatus }}
+    </div>
+    <!-- Display images if available -->
+    <div *ngIf="realEstate.images && realEstate.images.length > 0">
+        <strong>Images:</strong>
+        <ul>
+        <li *ngFor="let image of realEstate.images">
+            <img [src]="image.name" alt="Real Estate Image">
+        </li>
+        </ul>
+    </div>
+    <hr>
+    </li>
+</ul>
+</div>

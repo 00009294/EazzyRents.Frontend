@@ -1,0 +1,16 @@
+<form [formGroup]="realEstateForm" (ngSubmit)="onSubmit()">
+<h1>Real Esate Form</h1>
+<label for="description">Description:</label>
+<input type="text" id="description" formControlName="description" required>
+
+<label for="address">Address:</label>
+<input type="text" id="address" formControlName="address" required>
+
+<label for="price">Price:</label>
+<input type="number" id="price" formControlName="price" required>
+
+<label for="phoneNumber">Phone Number:</label>
+<input type="text" id="phoneNumber" formControlName="phoneNumber" pattern="\d{3}-\d{3}-\d{4}">
+
+<button type="submit" [disabled]="realEstateForm.valid">Submit</button>
+</form>

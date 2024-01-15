@@ -1,0 +1,38 @@
+/* Apply some basic styling to the form */
+form {
+max-width: 400px;
+margin: auto;
+}
+
+/* Style form labels */
+label {
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+}
+
+/* Style form inputs */
+input {
+width: 100%;
+padding: 8px;
+margin-bottom: 16px;
+box-sizing: border-box;
+}
+
+/* Style the submit button */
+button {
+background-color: #4caf50; /* Green */
+color: white;
+padding: 10px 15px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* Disable the button when the form is not valid */
+button:disabled {
+background-color: #ddd;
+cursor: not-allowed;
+}
+
+/* Add additional styles as needed */
