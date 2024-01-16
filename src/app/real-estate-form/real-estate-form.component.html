@@ -11,6 +11,12 @@
 
 <label for="phoneNumber">Phone Number:</label>
 <input type="text" id="phoneNumber" formControlName="phoneNumber" pattern="\d{3}-\d{3}-\d{4}">
+<div>
+    <button type="submit">Upload image</button>
+</div>
+<div>
+    <button type="submit" [disabled]="realEstateForm.valid">Add</button>
+</div>
 
-<button type="submit" [disabled]="realEstateForm.valid">Submit</button>
+
 </form>

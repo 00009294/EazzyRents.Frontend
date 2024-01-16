@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { RealEstateListComponent } from './real-estate-list/real-estate-list.component';
 import { RealEstateFormComponent } from './real-estate-form/real-estate-form.component';
+import { RealEstateItemComponent } from './real-estate-item/real-estate-item.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RealEstateFormComponent } from './real-estate-form/real-estate-form.com
     LoginComponent,
     RealEstateListComponent,
     RealEstateFormComponent,
+    RealEstateItemComponent,
   ],
   imports: [
     BrowserModule,

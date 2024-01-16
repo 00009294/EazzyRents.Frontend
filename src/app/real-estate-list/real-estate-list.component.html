@@ -1,33 +1,14 @@
-<div>
+<div class="title">
     <h2>Real Estate List</h2>
-
-<ul>
-    <li *ngFor="let realEstate of realEstates">
-    <div>
-        <strong>Description:</strong> {{ realEstate.description }}
-    </div>
-    <div>
-        <strong>Address:</strong> {{ realEstate.address }}
-    </div>
-    <div>
-        <strong>Price:</strong> ${{ realEstate.price }}
-    </div>
-    <div>
-        <strong>Phone Number:</strong> {{ realEstate.phoneNumber }}
-    </div>
-    <div>
-        <strong>Status:</strong> {{ realEstate.realEstateStatus }}
-    </div>
-    <!-- Display images if available -->
-    <div *ngIf="realEstate.images && realEstate.images.length > 0">
-        <strong>Images:</strong>
-        <ul>
-        <li *ngFor="let image of realEstate.images">
-            <img [src]="image.name" alt="Real Estate Image">
-        </li>
-        </ul>
-    </div>
-    <hr>
-    </li>
-</ul>
+</div>
+<div class="item-list">
+    <app-real-estate-item imageSrc="assets/img/img1.jpeg"></app-real-estate-item>
+    <app-real-estate-item imageSrc="assets/img/img2.jpeg"></app-real-estate-item>
+    <app-real-estate-item imageSrc="assets/img/img3.jpeg"></app-real-estate-item>
+    <app-real-estate-item imageSrc="assets/img/img4.jpeg"></app-real-estate-item>
+    <app-real-estate-item imageSrc="assets/img/img5.jpeg"></app-real-estate-item>
+    <app-real-estate-item imageSrc="assets/img/img6.jpeg"></app-real-estate-item>
+    <app-real-estate-item imageSrc="assets/img/img7.jpeg"></app-real-estate-item>
+    <app-real-estate-item imageSrc="assets/img/img8.jpeg"></app-real-estate-item>
+    <app-real-estate-item imageSrc="assets/img/img9.jpeg"></app-real-estate-item>
 </div>

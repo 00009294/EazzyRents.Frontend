@@ -1,29 +1,14 @@
-/* Add your custom styles here */
-
-h2 {
-color: #333;
+.title{
+    max-width: 500px;
+    margin: auto;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
-
-ul {
-list-style-type: none;
-padding: 0;
+.item-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-
-li {
-border: 1px solid #ddd;
-border-radius: 5px;
-padding: 10px;
-margin-bottom: 10px;
-}
-
-strong {
-color: #555;
-}
-
-img {
-max-width: 100%;
-height: auto;
-margin-top: 5px;
-border: 1px solid #ddd;
-border-radius: 5px;
+h2{
+    text-align: center;
 }

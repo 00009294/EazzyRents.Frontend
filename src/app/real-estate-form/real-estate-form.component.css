@@ -21,6 +21,7 @@ box-sizing: border-box;
 
 /* Style the submit button */
 button {
+margin-bottom: 10px;
 background-color: #4caf50; /* Green */
 color: white;
 padding: 10px 15px;

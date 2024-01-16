@@ -10,27 +10,11 @@ import { RealEstateStatus } from '../models/RealEstateStatus';
   styleUrls: ['./real-estate-list.component.css']
 })
 export class RealEstateListComponent implements OnInit {
-  realEstates: RealEstate[] = [{
-    id: 1,
-    description: 'Example Description',
-    address: 'Example Address',
-    price: 100000,
-    phoneNumber: '123-456-7890',
-    ownerId: 1,
-    images: [
-      {id: 1, name: "image.png"},
-      {id: 2, name: "image.png"},
-      {id: 3, name: "image.png"},
-      {id: 4, name: "image.png"}
-    ],
-    realEstateStatus: RealEstateStatus.Active,
-  }];
+  
 
   constructor(private realEstateService: RealEstateService) { }
 
   ngOnInit(): void {
-    this.realEstateService.getAll().subscribe(data => {
-      this.realEstates = data;
-    });
+   
   }
 }

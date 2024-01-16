@@ -1,0 +1,20 @@
+<div class="item-container">
+    <div *ngFor="let realEstate of realEstates">
+        <img [src]="imageSrc" alt="Real Estate Image">
+        <div>
+            <strong>Description:</strong> {{ realEstate.description }}
+        </div>
+        <div>
+            <strong>Address:</strong> {{ realEstate.address }}
+        </div>
+        <div>
+            <strong>Price:</strong> ${{ realEstate.price }}
+        </div>
+        <div>
+            <strong>Phone Number:</strong> {{ realEstate.phoneNumber }}
+        </div>
+        <div>
+            <strong>Status:</strong> {{ realEstate.realEstateStatus }}
+        </div>
+    </div>
+</div>
