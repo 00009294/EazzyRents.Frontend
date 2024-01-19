@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { RealEstateService } from '../services/real-estate.service';
-import { RealEstate } from '../models/RealEstate';
-import { RealEstateStatus } from '../models/RealEstateStatus';
 
 
 @Component({
@@ -11,10 +9,15 @@ import { RealEstateStatus } from '../models/RealEstateStatus';
 })
 export class RealEstateListComponent implements OnInit {
   
+  data = {
+    title: 'Real Estate List'
+  }  
 
   constructor(private realEstateService: RealEstateService) { }
 
   ngOnInit(): void {
-   
+  }
+  onKeyUp(text: string){
+    this.data.title = text;
   }
 }
